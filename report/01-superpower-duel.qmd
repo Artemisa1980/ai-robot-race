@@ -2,15 +2,15 @@
 
 The race to build humanoid robots is not one contest but two, run on different tracks toward different finish lines. The United States and China have each bet on a distinct theory of how an industry like this is won, and the divergence in those bets explains almost everything that follows in this report.
 
-The American wager is **software-first and capital-intensive**: win the brain, and the body will follow. The Chinese wager is **hardware-first and state-directed**: drive the cost of the body toward commodity pricing, and scale will follow. These are tendencies, not absolutes — Tesla and Boston Dynamics build formidable hardware, and Chinese firms train their own models — but the centre of gravity of each program is unmistakable, and neither bet is obviously wrong. The question this report exists to answer is which theory survives contact with the *hidden cost* of building at scale; but first we have to see the two machines clearly.
+The American wager is **software-first and capital-intensive**: win the brain, and the body will follow. The Chinese wager is **hardware-first and state-directed**: drive the cost of the body toward commodity pricing, and scale will follow. These are tendencies, not absolutes — Tesla and Boston Dynamics build formidable hardware, and Chinese firms train their own models — but the center of gravity of each program is unmistakable, and neither bet is obviously wrong. The question this report exists to answer is which theory survives contact with the *hidden cost* of building at scale; but first we have to see the two machines clearly.
 
 ## The American model: betting on the brain
 
 The defining American move has been to treat the humanoid as an AI problem wearing a chassis. The clearest signal is NVIDIA's Project GR00T, a general-purpose foundation model for humanoid robots launched in March 2024 and paired with simulation tools that let a robot learn skills from synthetic data rather than from slow, expensive physical trials [@nvidia2024groot]. The reasoning is the reasoning of frontier AI: if intelligence can be trained in the cloud and poured into any body, the body becomes a commodity and the *model* becomes the moat.
 
-That conviction is priced into American capital markets. Figure AI, an American humanoid startup, raised $675 million in early 2024 at a reported $2.6 billion valuation, backed by Microsoft, the OpenAI Startup Fund, NVIDIA, and Jeff Bezos, alongside a collaboration with OpenAI to give its robots language and reasoning [@figure2024seriesb]. Eighteen months later the same company closed a Series C of more than $1 billion at a **$39 billion** post-money valuation [@figure2025seriesc]. These are software-industry numbers — valuations that assume the winner captures a platform, not a product line.
+That conviction is priced into American capital markets. Figure AI, an American humanoid startup, raised $675 million in early 2024 at a reported $2.6 billion valuation, backed by Microsoft, the OpenAI Startup Fund, NVIDIA, and Jeff Bezos, alongside a collaboration with OpenAI to give its robots language and reasoning [@figure2024seriesb]. By September 2025 the same company had closed a Series C of more than $1 billion at a **$39 billion** post-money valuation [@figure2025seriesc]. These are software-industry numbers — valuations that assume the winner captures a platform, not a product line.
 
-The cost philosophy follows from the capital philosophy. Tesla has publicly targeted a sub-$30,000 price for its Optimus humanoid, while Agility Robotics' Digit — offered largely through leasing rather than outright sale — has been reported at upwards of $250,000 per unit [@robotreport2024unitree]. The American bet tolerates a high unit cost today on the assumption that scaled intelligence will collapse it tomorrow.
+The cost philosophy follows from the capital philosophy. At Tesla's October 2024 *We, Robot* event, Elon Musk put Optimus's eventual price at $20,000–$30,000 — "less than a car" — though that is a long-range target for a humanoid Tesla has not yet sold [@techcrunch2024optimus]. Agility Robotics' Digit, by contrast — offered largely through leasing rather than outright sale — has been reported at upwards of $250,000 per unit [@robotreport2024unitree]. The American bet tolerates a high unit cost today on the assumption that scaled intelligence will collapse it tomorrow.
 
 ## The Chinese model: betting on the body
 
@@ -18,7 +18,7 @@ China inverted the bet. Rather than chase the frontier model, it set out to make
 
 This is not exhortation without money behind it. At the 2025 Two Sessions, the National Development and Reform Commission announced a ¥1 trillion (about **$138 billion**) state fund for "hard tech" — robotics and AI among them — deployed as market-based equity with horizons of up to twenty years [@ifr2025chinafund; @robotreport2025chinasurge]. The capital is already moving: by mid-2025, on The Robot Report's tally, China had put an estimated $3.4 billion into new robotics ventures — 42% more than the United States and five times Europe — while six of its eleven major humanoid manufacturers had launched mass-production lines in 2024 [@robotreport2025chinasurge].
 
-China's structural advantage, though, is not the subsidy — it is the supply chain it already owns. A decade of electric-vehicle dominance built much of the component base a humanoid needs, and nowhere is the edge clearer than in batteries. In 2024, lithium-ion battery pack prices averaged **$94/kWh in China** — the world's lowest — against a global average of $115/kWh, with US and European packs running 31% and 48% higher *than China's* [@bnef2024battery]. The same battery supply chain that made Chinese EVs cheap now feeds Chinese robots. The emblem is Unitree's G1: it launched in 2024 at **$16,000** and Unitree now lists it at **$13,500** [@unitree_g1; @robotreport2024unitree] — a robot *shipping today* at a price well under even the sub-$30,000 that Tesla merely *targets* for a not-yet-released Optimus, and a fraction of the roughly $250,000 cited for Agility's Digit [@robotreport2024unitree].
+China's structural advantage, though, is not the subsidy — it is the supply chain it already owns. A decade of electric-vehicle dominance built much of the component base a humanoid needs, and nowhere is the edge clearer than in batteries. In 2024, lithium-ion battery pack prices averaged **$94/kWh in China** — the world's lowest — against a global average of $115/kWh, with US and European packs running 31% and 48% higher *than China's* [@bnef2024battery]. The same battery supply chain that made Chinese EVs cheap now feeds Chinese robots. The emblem is Unitree's G1: the standard model launched in 2024 at about **$16,000** and Unitree now lists that same base configuration at **$13,500** [@unitree_g1; @robotreport2024unitree]. The comparison demands an honest caveat — at 1.32 m and roughly 35 kg, the G1 is a smaller, lighter machine than the full-size Optimus or Digit, so it is not a like-for-like substitute [@unitree_g1]. Yet the gap is far too wide to be explained by size alone: China is *shipping* a capable humanoid for the price of a used car today, while Tesla still only *targets* $20,000–$30,000 for an Optimus it has not sold [@techcrunch2024optimus] and Agility's full-size Digit is reported at upwards of $250,000 [@robotreport2024unitree].
 
 > The United States is racing to build the *smartest* robot; China is racing to build the *cheapest* one. Whether intelligence or affordability turns out to be the binding constraint of the next decade is the question that decides the race.
 
@@ -29,11 +29,46 @@ China's structural advantage, though, is not the subsidy — it is the supply ch
 | Core bet | Software-first: the foundation model is the moat | Hardware-first: the cheap, domestic body is the moat |
 | Engine of progress | Private capital + frontier AI | State direction + industrial supply chain |
 | Emblematic asset | NVIDIA GR00T foundation model [@nvidia2024groot] | Unitree G1, now \$13,500 [@unitree_g1] |
-| Capital mobilisation | Figure AI: \$39B private valuation [@figure2025seriesc] | NDRC: ¥1T (~\$138B) state hard-tech fund [@ifr2025chinafund] |
+| Capital mobilization | Figure AI: \$39B private valuation [@figure2025seriesc] | NDRC: ¥1T (~\$138B) state hard-tech fund [@ifr2025chinafund] |
 | Cost posture | High unit cost now; betting scale collapses it | Low unit cost now, via EV-derived parts (battery \$94/kWh) [@bnef2024battery] |
 
-*Note: the two "capital mobilisation" entries are not the same unit — one firm's private valuation versus a national fund — but each is the clearest emblem of how money is marshalled on its side.*
+*Note: the two "capital mobilization" entries are not the same unit — one firm's private valuation versus a national fund — but each is the clearest emblem of how money is marshaled on its side.*
 
-<!-- chart: figures/01-battery-price-by-region.svg (Datawrapper) — bar chart, 2024 Li-ion pack price: China $94/kWh vs. global avg $115/kWh; source: BloombergNEF 2024 -->
+```{python}
+#| label: fig-battery
+#| fig-cap: "Lithium-ion battery pack prices by region, 2024 ($/kWh). China's $94 packs are the world's cheapest; the United States ($123) and Europe ($139) run 31% and 48% higher — both derived from BNEF's reported percentages off China's base. The dashed line marks the $115 global average. Source: BloombergNEF (2024)."
+
+import matplotlib.pyplot as plt
+import figstyle as fs
+fs.apply()
+
+regions = ["China", "United States", "Europe"]
+prices  = [94, 123, 139]
+colors  = [fs.ACCENT, fs.SANBLUE, fs.SANBLUE]
+global_avg = 115
+
+fig, ax = fs.new(height=2.7)
+bars = ax.barh(regions, prices, color=colors, height=0.58, zorder=3)
+ax.invert_yaxis()  # China on top
+
+for bar, price in zip(bars, prices):
+    ax.text(bar.get_width() + 2, bar.get_y() + bar.get_height() / 2,
+            f"${price}/kWh", ha="left", va="center",
+            color=fs.DARK, fontsize=9.5, fontweight="bold", zorder=4)
+
+# Global-average benchmark (not a region — a reference line)
+ax.axvline(global_avg, color=fs.DARK, linestyle=(0, (4, 3)), linewidth=1.2, zorder=2)
+ax.annotate(f"Global avg  ${global_avg}", xy=(global_avg, -0.85),
+            ha="center", va="center", fontsize=8.5, color=fs.DARK, zorder=5,
+            bbox=dict(facecolor="white", edgecolor="none", pad=1.5))
+ax.set_ylim(2.55, -1.1)
+
+ax.set_xlim(0, 165)
+ax.set_xlabel("Battery pack price, 2024 ($/kWh)")
+ax.tick_params(axis="y", length=0)
+fs.title(ax, "China's battery advantage")
+fs.source(ax, "BloombergNEF (2024)")
+plt.show()
+```
 
 These two philosophies are not merely strategies; they are the opening conditions of the robot's entire life. Everything a humanoid will cost — to build, to run, to repair, and eventually to discard — is set in motion by which of these models produced it. The next chapter opens that machine up and counts the cost, component by component.

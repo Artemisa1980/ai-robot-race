@@ -1,6 +1,6 @@
 project:
   type: book
-  output-dir: ../_output
+  output-dir: _output
 
 book:
   title: "The AI Robot Race and Its Hidden Cost"
@@ -25,6 +25,11 @@ book:
 bibliography: references.bib
 csl: apa.csl
 
+execute:
+  echo: false
+  warning: false
+  freeze: auto
+
 format:
   html:
     theme:
@@ -32,6 +37,8 @@ format:
       - theme/sanblue.scss
     toc: true
     number-sections: true
+    fig-format: svg
   typst:
     toc: true
     number-sections: true
+    fig-format: svg
