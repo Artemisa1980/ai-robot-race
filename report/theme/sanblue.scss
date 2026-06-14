@@ -1,0 +1,21 @@
+/*-- scss:defaults --*/
+$sanblue:       #1f4e8c;   // primary deep blue
+$sanblue-dark:  #14223f;   // headings / cover
+$sanblue-accent:#e8a13a;   // amber accent for pull-quotes/highlights
+$gray-100:      #f6f8fb;
+
+$font-family-sans-serif: "Inter", "Helvetica Neue", Arial, sans-serif;
+$font-family-serif:      "Source Serif 4", Georgia, serif;
+$body-color:    #1b1f24;
+$link-color:    $sanblue;
+$h1-font-size:  2.2rem;
+
+/*-- scss:rules --*/
+h1, h2, h3 { color: $sanblue-dark; font-family: $font-family-sans-serif; letter-spacing: -0.01em; }
+body { font-family: $font-family-serif; line-height: 1.65; }
+blockquote {
+  border-left: 4px solid $sanblue-accent;
+  background: $gray-100;
+  font-size: 1.1rem; font-style: italic; padding: 0.75rem 1.25rem;
+}
+.lifecycle-tag { color: $sanblue; font-weight: 600; font-variant: small-caps; }

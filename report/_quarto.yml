@@ -1,0 +1,37 @@
+project:
+  type: book
+  output-dir: ../_output
+
+book:
+  title: "The AI Robot Race and Its Hidden Cost"
+  subtitle: "A 10-Year Outlook (2025–2035) — USA vs. China"
+  author: "Sandy E. Quintero — SanBlueDot"
+  date: "2026"
+  chapters:
+    - index.qmd
+    - 01-superpower-duel.qmd
+    - 02-economics-of-a-humanoid.qmd
+    - 03-capital-investment.qmd
+    - 04-reliability-gap.qmd
+    - 05-trade-tariffs.qmd
+    - 06-adoption-generational.qmd
+    - 07-fast-hardware.qmd
+    - 08-ewaste-wave.qmd
+    - 09-circular-economy.qmd
+    - 10-net-reckoning.qmd
+    - conclusion.qmd
+    - references.qmd
+
+bibliography: references.bib
+csl: apa.csl
+
+format:
+  html:
+    theme:
+      - cosmo
+      - theme/sanblue.scss
+    toc: true
+    number-sections: true
+  typst:
+    toc: true
+    number-sections: true
