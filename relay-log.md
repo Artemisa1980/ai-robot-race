@@ -62,3 +62,32 @@
 **To resume:** open a chat in this folder, say "continuemos el AI Robot Race"; read core.md + this relay-log + claims-ledger; start Chapter 2.
 **Issues:** None. Working tree clean after commit.
 **Files changed:** report/01-superpower-duel.qmd, relay-log.md, report/_freeze/* (regenerated), + git commit
+
+## 2026-06-15 — Opus 4.8 — Chapter 2 drafted + peer-reviewed (P1–P6)
+**Phase:** Phase 2, Task 12 — Chapter 2 (The Economics of a Humanoid / BOM)
+**Completed:** Ran Chapter Production Protocol P1–P6. **Discarded** the unsourced draft tables ($71k/$46k & $24k/$15k) and the famous Morgan Stanley "$55k Optimus teardown" (only reachable via crypto blogs — ❌ in ledger, Source-or-Silence). Verified everything against **3 primary/authoritative sources**: Goldman Sachs (cost $50–250k→$30–150k, ~40% one-year drop), BofA Global Research (read the actual PDF via pypdf — China BOM $35k→<$17k by 2030; pilot $90–100k; 2030 BOM split: actuators >50%, battery only 4%), Morgan Stanley/CNBC (actuators "just under half"; fully-loaded ~$200k 2024→$50k 2050; auto-parts ≈60% of components). Added 4 refs to references.bib (15 total, all resolve), 8 rows to claims-ledger. Wrote chapter in locked Ch1 style + `fig-bom` chart (BofA Exhibit 6, reused figstyle.py) — visually inspected, magazine-grade. **Reconciled** the draft conflict as a 4-row "four different numbers" table (BOM vs fully-loaded; China vs high-income). Rendered clean (PDF 567k+, HTML, 0 stray cites). Ran `peer-review` → **Minor revisions** → applied all 5: R1 dropped the $15k/60% anchor (implied a ~$25k total that contradicted the chapter's range), R2 fixed the Goldman chronology (the 40% drop was reported IN the early-2024 note vs its 2023 estimate — not "a year later"), R3 tightened the BofA/MS "same direction" framing, R4 flagged the split as a 2030 projection, R5 marked the 2050 figure as long-range. Re-rendered clean.
+**Next step:** `brutal-critic` on Chapter 2 (PROFESSIONAL stakes) — **manual-only skill, needs Sandy's explicit word.** Then apply fixes + re-run BC to confirm PASS (working pattern), then commit. After Ch2 closes → Task 13, Chapter 3 (Capital & Investment).
+**Issues:** None outstanding. Uncommitted changes ready to commit when Sandy asks. Note: installed `pypdf` (pip) to read the BofA source PDF; `poppler` NOT installed (Read tool can't render PDF pages — used pypdf text extraction instead).
+**Files changed:** report/02-economics-of-a-humanoid.qmd, report/references.bib, claims-ledger.md, relay-log.md, report/_freeze/* (generated)
+
+## 2026-06-15 — Opus 4.8 — Chapter 2 brutal-critic round 1 + all fixes
+**Phase:** Phase 2, Task 12 — Chapter 2, post-BC corrections
+**Completed:** Sandy launched `brutal-critic` (PROFESSIONAL) → FAIL: 1 Critical + 5 weaknesses. Fixed all:
+- **CF1** (cross-chapter contradiction): L64 said full-size Western humanoids "remain pre-commercial" — contradicted Ch1 (Digit offered at ~$250k) AND repeated the small-G1-vs-full-size cross-class comparison Ch1's BC forced to caveat. Rewrote as a clean BOM-vs-BOM (in-class, part-for-part) comparison; dropped the G1 retail callback.
+- **W1**: "actuation" = 51% in text but 70% in caption — reconciled both (actuators alone 51%; +hands 70%).
+- **W2**: table dated Goldman $30–150k "2025" vs prose "early 2024" — aligned to 2024.
+- **W3**: documented verification path in ledger — only BofA read directly (PDF); Goldman + MS pages 403, via corroborated secondary; MS-only figures flagged least-corroborated.
+- **W4**: "most important number in this report" oversold vs the hidden-cost thesis — softened.
+- **W5**: muddled moat/drawbridge metaphor → "the moat is the cheap part."
+**Verification:** Re-rendered clean — PDF + HTML, 0 unresolved cites, 15 refs resolve, chart regenerates, target strings confirmed removed/added.
+**Next step:** Re-run `brutal-critic` to confirm PASS (manual-only — needs Sandy's word), per the working pattern. Then commit Ch2. Then Task 13, Chapter 3 (Capital & Investment).
+**Issues:** None outstanding. Uncommitted.
+**Files changed:** report/02-economics-of-a-humanoid.qmd, claims-ledger.md, relay-log.md, report/_freeze/* (regenerated)
+
+## 2026-06-15 — Opus 4.8 — Chapter 2 brutal-critic rounds 2–4 → CLEAN PASS ✅
+**Phase:** Phase 2, Task 12 — Chapter 2 CLOSED ✅
+**Completed:** Sandy authorized the BC confirmation loop ("no avanzamos hasta que BC dé PASS"). **Round 2** → FAIL: confirmed CF1+W1–W5 closed but caught 2 NEW defects my own fixes introduced — CF-A (unsourced "Western" tag on the $90–100k pilot figure + stage/geography conflation in the geography ¶) and W-A (auto-parts "60% of components" misstated MS's "60% of production cost"). Fixed both. **Round 3** → CONDITIONAL PASS: CF-A/W-A closed, no regressions; one minor style item W-B (L64 restated L60's figures + ran long). Fixed W-B (reference "that earlier table" instead of re-quoting; split sentences) — and caught a self-introduced "near the top of the table" imprecision in that very fix, corrected to an exact BOM-to-BOM "nearly three times" comparison. **Round 4** → **PASS** (clean): all 9 findings closed, zero criticals, zero weaknesses, zero regressions, render clean.
+**Working note:** the confirmation loop earned its keep — rounds 2–4 caught 3 defects (CF-A, W-A, the "top of table" slip) that were *introduced by correcting earlier ones*. Never assume a fix is clean.
+**Next step:** Commit Ch2 (awaiting Sandy's word — "Commit when she asks"). Then Task 13 — Chapter 3 (Capital & Investment Landscape): named funders/valuations both sides, verify each to primary/filing-grade; capital-flow comparison chart (reuse figstyle.py).
+**Issues:** None. Uncommitted — working tree has Ch2 changes ready.
+**Files changed:** report/02-economics-of-a-humanoid.qmd, claims-ledger.md, relay-log.md, report/_freeze/* (regenerated)
