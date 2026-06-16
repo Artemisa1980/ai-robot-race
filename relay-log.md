@@ -7,7 +7,8 @@
 **Done & committed (each: clean PASS through peer-review + brutal-critic):**
 - **Ch1 — The Superpower Duel** ✅ — committed `e2c87d8`
 - **Ch2 — The Economics of a Humanoid** (BOM; lifecycle: birth) ✅ — committed `c60df2d`
-- **Ch3 — Capital & Investment Landscape** ✅ — committing now
+- **Ch3 — Capital & Investment Landscape** ✅ — committed `168ab4d`
+- **Ch4 — The Reliability Gap** (lifecycle: working life) ✅ — **brutal-critic CLEAN PASS** (2026-06-15). R1 = FAIL: caught CF1 — the 88%/2.5% stat had the wrong denominator *and* wrong attribution vs the primary (The Robot Report 2019, read verbatim this session); 2.5% is *all robot problems as a share of total available time*, not "2.5% of downtime" and not the arm alone (arm physically breaking ≈0.6% of total time). Also W1 (4%-BOM unqualified), W3 (chart metric mismatch), W4 (unsourced disposal claim), + n.d.→2019 date fix. All fixed; confirmation round caught 2 residual faithfulness nits (denominator term, unsourced "programming") and closed them → PASS. **Uncommitted — awaiting Sandy's word to commit.**
 **State:** `references.bib` = 20 entries, all resolve, 0 stray cites. `claims-ledger.md` logs every figure with status (✅/✏️/⚠️/❌) + verification path. Renders clean to PDF + HTML.
 
 ## Durable decisions / working patterns
@@ -19,4 +20,5 @@
 - **Env:** `pypdf` installed (pip) to read source PDFs; `poppler` NOT installed (Read tool can't render PDF pages — use pypdf text extraction).
 
 ## Next step
-**Task 14 — Chapter 4: The Reliability Gap** (lifecycle: working life). Verify: humanoid maintenance interval ~200–500 operating hours vs industrial-arm MTBF 50,000+ hours — the **50,000h must be sourced to a manufacturer/standard** (ISO / ABB / FANUC), not asserted; humanoid figure labeled ⚠️ Estimate if only analyst-grade. Chart: MTBF comparison bar (log scale), reuse `figstyle.py`. Run the full Chapter Production Protocol.
+**Commit Ch4** (clean PASS reached — commit on `main` when Sandy gives the word). Ch4 note: the drafts' "200–500 h humanoid MTBF" was DROPPED (unsourced, model-derived) — chapter argues honestly that humanoid reliability data does not exist; industrial side = FANUC advertised MTBF up to 100,000h (⚠️) + the 88% real-world study (The Robot Report 2019: 80% of stoppages non-robot, robot problems = 2.5% of total available time, arm physically breaking a tiny slice); humanoid = ~2h battery runtime (Bain). `fig-reliability` = log-scale MTBF-vs-runtime, both caption AND on-chart "no MTBF disclosed" own the metric mismatch.
+**Then Task 15 — Chapter 5: Trade, Tariffs & Supply Chains.** Verify specific tariff rates + export-control measures to official schedules (USTR / BIS); any "125%/200–300% premium" claims to official source or relabel as estimate. Chart: tariff/bottleneck table or map.
