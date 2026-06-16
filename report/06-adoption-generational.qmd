@@ -1,3 +1,63 @@
-# Adoption & Generational Dynamics
+# Adoption & the Generational Divide
 
-_Act I · Chapter 6. Content written in Task 16._
+Chapter 5 left the components clearing customs and the robots getting built. The question this chapter asks is the one every supply chain eventually runs into: who actually buys what comes off the line, and puts it to work? The popular answer is a neat generational story — that each age cohort relates to robots in its own tidy way, and disposes of them accordingly. That story is almost entirely invented. The real generational divide is messier, better documented, and more consequential, and it is built from two forces that do not point the same way: an aging workforce that pulls robots in whether anyone is enthusiastic or not, and a younger population that uses the technology heavily yet remains wary of it.
+
+## The demographic engine
+
+The strongest force behind robot adoption is not excitement. It is arithmetic. As a population ages and the supply of working-age people shrinks, employers automate to cover the gap — a relationship the economists Daron Acemoglu and Pascual Restrepo documented as a robust, cross-country association between aging and robot adoption: the societies running short of middle-aged workers are precisely the ones that install the most robots [@acemoglu2022demographics]. Demographics, not sentiment, set the baseline. Japan is the clearest case — its labor shortage hit a record in 2024, and automation has become the country's structural answer to a workforce that is simply running out of people [@ifr2024japan].
+
+The map of where robots already work follows that logic almost exactly.
+
+```{python}
+#| label: fig-density
+#| fig-cap: "Manufacturing robot density — installed industrial robots per 10,000 employees, 2023. The leaders are the economies with the oldest or scarcest workforces: South Korea (one of the world's lowest fertility rates), Japan and Germany (aging industrial bases), and labor-tight Singapore. China has more than doubled its density since 2019 and now stands at 470 — above the United States at 295. The dashed line is the world average of 162, itself double the 2016 figure. Source: International Federation of Robotics (2024)."
+
+import matplotlib.pyplot as plt
+import figstyle as fs
+fs.apply()
+
+countries  = ["South Korea", "Singapore", "China", "Germany", "Japan", "United States"]
+density    = [1012, 770, 470, 429, 419, 295]
+global_avg = 162
+colors = [fs.ACCENT] + [fs.SANBLUE] * 5  # Korea (the emblem) in amber
+
+fig, ax = fs.new(height=3.1)
+bars = ax.barh(countries, density, color=colors, height=0.62, zorder=3)
+ax.invert_yaxis()  # South Korea on top
+
+for bar, d in zip(bars, density):
+    ax.text(bar.get_width() + 14, bar.get_y() + bar.get_height() / 2,
+            f"{d:,}", ha="left", va="center",
+            color=fs.DARK, fontsize=9.5, fontweight="bold", zorder=4)
+
+ax.axvline(global_avg, color=fs.DARK, linestyle=(0, (4, 3)), linewidth=1.2, zorder=2)
+ax.annotate(f"World avg  {global_avg}", xy=(global_avg, -0.75),
+            ha="center", va="center", fontsize=8.5, color=fs.DARK, zorder=5,
+            bbox=dict(facecolor="white", edgecolor="none", pad=1.5))
+
+ax.set_ylim(5.6, -1.15)
+ax.set_xlim(0, 1180)
+ax.set_xlabel("Robots per 10,000 manufacturing employees, 2023")
+ax.tick_params(axis="y", length=0)
+fs.title(ax, "Where the robots already work")
+fs.source(ax, "International Federation of Robotics (2024)")
+plt.show()
+```
+
+Read the ranking and the demographic engine is unmistakable. South Korea, with one of the world's lowest fertility rates, runs more than 1,000 robots per 10,000 factory workers — six times the world average. Singapore, Japan, and Germany follow, each an economy where labor is old, expensive, or both. The United States, with a younger population and a deeper pool of workers, sits at 295 — and has now been passed by China, whose density doubled in four years on the back of state policy, the electric-vehicle supply chain of Chapter 5, and an aging population of its own. Where the workforce is scarce, the robots are already there; where it is not, adoption lags. That is the generational divide that actually moves units, and it is a divide between national age structures, not between consumer attitudes.
+
+## The attitudinal divide
+
+The second force is softer and runs the other way. Surveyed about how artificial intelligence makes them feel, Americans split by age — but not in the direction the marketing decks assume. Younger adults are the heavy users: about 38% of those aged 18–29 have used ChatGPT at work, against 30% of those 30–49 and 18% of those 50 and older, and roughly half of all adults under 50 now interact with some AI daily or more [@pew2026ai]. Exposure falls steadily with age. Yet exposure is not endorsement. Across the whole adult population about half say AI's growing role makes them more concerned than excited, and only around one in ten lean the other way; younger adults are *slightly* more excited than their elders, but majorities of them are also wary of what AI does to human creativity and to the way people form relationships [@pew2026ai].
+
+The honest reading is that the young do not "embrace" robots while the old "resist" them. The young adopt the software fluently and worry about it specifically; the old use it less and distrust it more broadly. Acceptance and use are two different axes, and a generation can sit high on one and low on the other. Any adoption forecast that treats youth as a simple proxy for enthusiasm is reading a curve that the data does not contain.
+
+## The matrix that isn't there
+
+It is worth naming what this chapter does not do, because the temptation is everywhere in the industry's own materials. A tidy table circulates in robotics decks and draft reports: Baby Boomers cling to repair, Millennials replace out of "ecological guilt," Gen Z boycotts unsustainable brands, each cohort assigned a crisp disposal behavior. It is a seductive framework, and it is unsupported. Those behavioral claims trace back to no survey, dataset, or study that can be located; they are assertions repeated until they sound like findings. Under this report's standard — a claim is either sourced or it is silent — the matrix cannot be used, and is not. What can be said about generations and robots is what the demographic and survey data above actually support, and no more. The cost of intellectual honesty here is a less colorful table; the benefit is that nothing in this chapter will collapse when someone asks for the source.
+
+## Where the forces meet
+
+Put the two forces together and the geography of adoption resolves. Robots arrive fastest where the demographic pressure is sharpest: the aging economies of East Asia, where a shrinking workforce makes automation urgent and state policy pushes it hard. Whether those populations are also more *culturally* at ease with robots is plausible but, on the evidence assembled here, unproven — the attitudinal survey data is American, and should not be assumed to describe Seoul or Shenzhen. Adoption slows where the demographic pressure eases — where the workforce is still young enough to fill the jobs itself — and the United States, younger and (by its own survey data) ambivalent about the technology, is structurally a slower adopter than its rivalry with China implies. That is a gap the next chapters in this race will keep returning to.
+
+There is a sting in the tail, and it sets up what follows. The economies adopting humanoids fastest are also the ones that will replace them fastest — not because of any generational temperament, but because the hardware itself is about to start iterating at the speed of consumer electronics, and a machine made obsolete by next year's model is discarded whether its owner is sentimental about it or not. The generation of robots now being bought is already scheduled for obsolescence. The next chapter follows that acceleration, and the chapters after it follow what the discarded machines leave behind.
