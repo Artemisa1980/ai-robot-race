@@ -3,3 +3,6 @@ _output/
 .DS_Store
 __pycache__/
 .claude/settings.local.json
+
+/.quarto/
+**/*.quarto_ipynb
