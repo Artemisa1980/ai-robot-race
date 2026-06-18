@@ -15,3 +15,7 @@ framework.md
 /*.png
 /*.jpg
 /*.jpeg
+
+# Internal drafts & planning docs (kept local, not published)
+sources/
+docs/superpowers/
