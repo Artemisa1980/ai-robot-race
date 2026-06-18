@@ -5,7 +5,10 @@ project:
 book:
   title: "The AI Robot Race and Its Hidden Cost"
   subtitle: "A 10-Year Outlook (2025–2035) — USA vs. China"
-  author: "Sandy E. Quintero — SanBlueDot"
+  author:
+    - name: "Sandy E. Quintero"
+      orcid: "0009-0005-7948-5622"
+      affiliation: "SanBlueDot"
   date: "2026"
   chapters:
     - index.qmd
