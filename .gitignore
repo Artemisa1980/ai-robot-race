@@ -6,3 +6,12 @@ __pycache__/
 
 /.quarto/
 **/*.quarto_ipynb
+
+# Internal working files (kept local, not published)
+relay-log.md
+framework.md
+
+# Scratch images & brand assets (not used in the book)
+/*.png
+/*.jpg
+/*.jpeg
