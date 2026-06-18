@@ -1,3 +1,29 @@
 # Abstract {.unnumbered}
 
-_Front matter — Abstract and Key Findings. Written in Task 10._
+Between 2025 and 2035 the United States and China are racing to build the humanoid robot, and the contest is usually scored by a single question: who finishes first. This book argues that this is the wrong question. Drawing only on primary and authoritative sources — bank research desks, government filings, UN and industry statistics, peer-reviewed economics — it follows one machine across its entire lifecycle, from the bill of materials that builds it to the waste stream that swallows it, and prices each stage in turn.
+
+What emerges is an asymmetry that no single stage reveals on its own. The race is extraordinary at *acquiring* the machine and very nearly blind to *keeping* it. Capital, materials, manufacturing, and deployment — the front half of the lifecycle — are optimized with national urgency: a China-built bill of materials engineered to fall from about \$35,000 today to under \$17,000 by 2030 [@bofa2026physicalai], a roughly \$138 billion state fund [@ifr2025chinafund], a \$39 billion private valuation for a company yet to sell at scale [@figure2025seriesc], and export controls and tariffs fought over the magnets and chips inside every robot [@iea2025criticalminerals; @ustr2024section301; @crs2025semiconductors]. The back half — reliability, obsolescence, disposal, and recovery — is barely measured at all: no manufacturer discloses a humanoid's mean time between failures [@bain2025humanoid], no robot-specific e-waste tonnage exists, and recycling supplies only about 1% of the world's rare-earth demand even as nations fight to secure that same material at the mine [@gem2024].
+
+That gap is the hidden cost of the title. It is not a price the market has set too low; it is a half of the machine's life the race has chosen not to measure at all — and the silence in the data falls exactly where the spending and the urgency do not. Because that is a matter of where attention and money are pointed, not of any technical barrier, the book's closing argument is that the gap is a default, not a destiny: a humanoid built in our own image reflects the priorities we build into it, and which half of its life we choose to value is still an open question.
+
+## Key findings
+
+The race optimizes the four *acquisition* stages of a humanoid's life and neglects the four *keeping* stages. Every figure below is verified against its primary source in the chapter indicated.
+
+**The acquisition half — optimized:**
+
+- **Build (Ch. 2):** A China-built bill of materials runs about \$35,000 in 2025 and is engineered to fall below \$17,000 by 2030; actuators and dexterous hands are roughly 70% of that bill, while onboard compute — the "brain" — is only about 10% [@bofa2026physicalai].
+- **Fund (Ch. 3):** China stood up a ¥1 trillion (~\$138 billion) state "hard-tech" fund [@ifr2025chinafund]; in the United States, Figure AI alone reached a \$39 billion private valuation before selling robots at scale [@figure2025seriesc].
+- **Source (Ch. 5):** China refines ~91% of the world's rare earths and makes ~94% of its permanent magnets [@iea2025criticalminerals]; the United States controls the frontier chips and now taxes the magnets it barely makes at 25% [@ustr2024section301; @crs2025semiconductors].
+- **Deploy (Ch. 6):** Robot density has reached 1,012 per 10,000 workers in South Korea and 470 in China — past the United States at 295 — against a world average of 162, pulled by aging workforces [@ifr2024density; @acemoglu2022demographics].
+
+**The keeping half — neglected:**
+
+- **Run (Ch. 4):** No humanoid mean-time-between-failures has ever been disclosed, and today's machines run only about two hours on a charge [@bain2025humanoid].
+- **Outdate (Ch. 7):** The brain is lapped about every twelve months while the body is built to last a decade; Amazon shortened the booked life of its servers from six years to five and named AI as the reason [@nvidia2024computex; @therobotreport_reliability; @amazon2025form10q].
+- **Discard (Ch. 8):** Global e-waste is rising from 62 to 82 million tonnes while the share formally recycled falls toward 20%; only about 1% of rare-earth demand is met by recycling [@gem2024].
+- **Recover (Ch. 9):** ABB's remanufacturing loop cuts CO₂ by 75% and reuses 60–80% of an industrial arm — real, but a rounding error against 4.66 million robots in service, and it does not transfer to the fast-obsoleting humanoid [@abbreman_service; @ifr2025worldrobotics].
+
+## A note on method
+
+Every figure in this book passed through a single discipline: a claim is either traced to a primary or authoritative source or it is not used. Bank research was read from source PDFs where machine-readable; government filings (SEC 10-K and 10-Q filings, the USTR Section 301 determination) and UN, IEA, IFR, and Pew data were taken from the primary documents. Where sources conflicted, the book reports a sourced range rather than an invented midpoint. Where a widely circulated figure — a "200–500 hour humanoid MTBF," a "one billion robots by 2050" e-waste projection, a generational disposal-behavior matrix — could be traced only to unsourced drafts, it was discarded and the absence stated plainly. In several places across the keeping half, the honest finding is that the data does not yet exist; that absence is itself reported as evidence.
