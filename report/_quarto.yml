@@ -9,7 +9,8 @@ book:
     - name: "Sandy E. Quintero"
       orcid: "0009-0005-7948-5622"
       affiliation: "SanBlueDot"
-  date: "2026"
+  date: "2026-06-18"
+  date-format: "YYYY"
   chapters:
     - index.qmd
     - 01-superpower-duel.qmd
