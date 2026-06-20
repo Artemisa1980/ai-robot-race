@@ -1,0 +1,14 @@
+# Colophon {.unnumbered}
+
+::: {.colophon}
+Published by [sanblue^dot^]{.sanblue-mark}
+
+::: {.colophon-sub}
+retro dev-station · Ecuador
+:::
+
+::: {.colophon-meta}
+*The AI Robot Race and Its Hidden Cost* — A 10-Year Outlook (2025–2035).
+Built with [Quarto](https://quarto.org). Every figure traced to a primary or authoritative source.
+:::
+:::

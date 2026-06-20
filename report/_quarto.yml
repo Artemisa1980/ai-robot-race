@@ -8,7 +8,7 @@ book:
   author:
     - name: "Sandy E. Quintero"
       orcid: "0009-0005-7948-5622"
-      affiliation: "SanBlueDot"
+      affiliation: "sanbluedot"
   date: "2026-06-18"
   date-format: "YYYY"
   chapters:
@@ -25,6 +25,7 @@ book:
     - 10-net-reckoning.qmd
     - conclusion.qmd
     - references.qmd
+    - colophon.qmd
 
 bibliography: references.bib
 csl: apa.csl

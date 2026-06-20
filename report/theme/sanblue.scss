@@ -19,3 +19,10 @@ blockquote {
   font-size: 1.1rem; font-style: italic; padding: 0.75rem 1.25rem;
 }
 .lifecycle-tag { color: $sanblue; font-weight: 600; font-variant: small-caps; }
+
+/* sanblueᵈᵒᵗ brand colophon */
+.colophon { text-align: center; margin-top: 4rem; opacity: 0.9; font-family: $font-family-sans-serif; }
+.sanblue-mark { font-weight: 600; letter-spacing: -0.02em; font-size: 1.6rem; color: $sanblue-dark; }
+.sanblue-mark sup { color: #7cb3e8; font-size: 0.55em; top: -0.6em; }
+.colophon-sub { font-size: 0.9rem; color: $sanblue; margin: 0.25rem 0 1rem; }
+.colophon-meta { font-size: 0.85rem; color: $body-color; opacity: 0.8; }
