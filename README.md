@@ -3,7 +3,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20754384.svg)](https://doi.org/10.5281/zenodo.20754384)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-**SanBlueDot independent research** — a 10-year outlook (2025–2035) on the US–China race in
+**sanblue<sup>dot</sup> independent research** — a 10-year outlook (2025–2035) on the US–China race in
 embodied AI / humanoid robotics **and** its hidden cost: reliability, obsolescence, e-waste,
 and the circular economy. It follows one machine across its entire lifecycle — from the bill of
 materials that builds it to the waste stream that swallows it — and prices each stage. Every
@@ -28,7 +28,7 @@ The Quarto book in `report/` renders to PDF + HTML; the published site lives on 
 
 ## Author
 
-Sandy E. Quintero · ORCID [0009-0005-7948-5622](https://orcid.org/0009-0005-7948-5622) · SanBlueDot
+Sandy E. Quintero · ORCID [0009-0005-7948-5622](https://orcid.org/0009-0005-7948-5622) · sanblue<sup>dot</sup>
 
 ## License
 
